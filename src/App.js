@@ -1,9 +1,9 @@
 import React from "react";
-import { useClick } from "./hooks/useClick";
+import { useHover } from "./hooks/useHover";
 
 const App = () => {
-  const sayHello = () => console.log("Hello");
-  const title = useClick(sayHello);
+  const onHover = () => console.log("hovered");
+  const title = useHover(onHover);
   return (
     <div className="App">
       <h1 ref={title}>Hello</h1>

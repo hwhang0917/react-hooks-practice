@@ -12,11 +12,11 @@
 - [x] useInput
 - [x] useTabs
 - [x] useTitle
-- [ ] useClick
+- [x] useClick
+- [ ] useHover
 - [ ] usePageLeave
 - [ ] useFadeIn
 - [ ] useFullScreen
-- [ ] useHover
 - [ ] useNetwork
 - [ ] useNotification
 - [ ] useScroll
