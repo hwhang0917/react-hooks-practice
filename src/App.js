@@ -1,12 +1,12 @@
 import React from "react";
-import { useHover } from "./hooks/useHover";
+import { usePreventLeave } from "./hooks/usePreventLeave";
 
 const App = () => {
-  const onHover = () => console.log("hovered");
-  const title = useHover(onHover);
+  const { enablePrevent, disablePrevent } = usePreventLeave();
   return (
     <div className="App">
-      <h1 ref={title}>Hello</h1>
+      <button onClick={enablePrevent}>Protect</button>
+      <button onClick={disablePrevent}>Unprotect</button>
     </div>
   );
 };
