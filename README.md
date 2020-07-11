@@ -9,17 +9,17 @@
 
 ## React Hook Checklist
 
-- [ ] useTitle
-- [ ] useInput
-- [ ] usePageLeave
+- [x] useInput
+- [x] useTabs
+- [x] useTitle
 - [ ] useClick
+- [ ] usePageLeave
 - [ ] useFadeIn
 - [ ] useFullScreen
 - [ ] useHover
 - [ ] useNetwork
 - [ ] useNotification
 - [ ] useScroll
-- [ ] useTabs
 - [ ] usePreventLeave
 - [ ] useConfirm
 - [ ] useAxios
