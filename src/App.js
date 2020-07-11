@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useTabs } from "./hooks/useTabs";
 
 const content = [
   {
@@ -15,20 +16,12 @@ const content = [
   },
 ];
 
-const useTabs = (initialTab, allTabs) => {
-  const [currentIndex, setCurrentIndex] = useState(initialTab);
-  return {
-    currentItem: allTabs[currentIndex],
-    changeItem: setCurrentIndex,
-  };
-};
-
 const App = () => {
   const { currentItem, changeItem } = useTabs(0, content);
   return (
     <div className="App">
       {content.map((section, index) => (
-        <button onClick={()=>changeItem(index)}>{section.tab}</button>
+        <button onClick={() => changeItem(index)}>{section.tab}</button>
       ))}
       <div>{currentItem.content}</div>
     </div>
