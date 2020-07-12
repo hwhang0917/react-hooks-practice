@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 
-export const useHover = (onHover) => {
+const useHover = (onHover) => {
   const element = useRef(null);
   useEffect(() => {
     const hoveredElement = element.current;
@@ -11,3 +11,5 @@ export const useHover = (onHover) => {
   });
   return element;
 };
+
+export default useHover;

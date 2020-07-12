@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const useInput = (initialValue, validator) => {
+const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);
   const onChange = (event) => {
     const {
@@ -16,3 +16,5 @@ export const useInput = (initialValue, validator) => {
   };
   return { value, onChange };
 };
+
+export default useInput;
